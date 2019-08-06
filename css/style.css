@@ -884,6 +884,12 @@ h1 {
             transform: rotate(0deg);
   }
 }
+.btn--plus {
+  background-image: url(../img/icons/plus.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: left 20px center;
+}
 .info {
   margin-bottom: 150px;
 }
@@ -1084,6 +1090,66 @@ h1 {
 }
 .form__btn-speciality {
   font-size: 18px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #000;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+.table td {
+  padding: 8px;
+  border: 1px solid #BDBDBD;
+}
+.table td:first-child,
+.table th:first-child {
+  width: 594px;
+  text-align: left;
+}
+.table td:first-child {
+  padding-left: 28px;
+}
+.table th:nth-child(2),
+.table th:nth-child(3) {
+  width: 150px;
+}
+.table__header th {
+  padding-bottom: 7px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+  font-weight: 400;
+}
+.table__edit .btn {
+  width: 134px;
+  height: 33px;
+}
+.table__edit .btn:hover,
+.table__edit .btn:active {
+  background-color: #FFC856;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.table__remove .btn {
+  width: 80px;
+  height: 33px;
+}
+.table__remove .btn:hover,
+.table__remove .btn:active {
+  background-color: #E0E0E0;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.table__edit .btn,
+.table__remove .btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+.table__edit .btn::after,
+.table__remove .btn::after {
+  display: none;
 }
 @media (max-width: 1170px) {
   .wrapper {
