@@ -1,0 +1,130 @@
+.modal {
+  width: 860px;
+  max-width: 100%;
+  padding: 30px;
+  
+  .fancybox-close-small {
+    width: 31px;
+    height: 31px;
+    padding: 0;
+    top: 30px;
+    right: 30px;
+    border: 1px solid #000;
+    
+    svg {
+      stroke: #000;
+      
+    }
+  }
+}
+
+.modal__avatar {
+  width: 76px;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border: 1px solid #000;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    object-fit: cover;
+    object-position: 50%;
+  }
+}
+
+.modal__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.modal__message,
+.modal__input {
+  display: block;
+  margin-bottom: 30px;
+  border: 1px solid #BDBDBD;
+  
+  &::placeholder {
+    opacity: 1;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  &:hover,
+  &:focus {
+    border-color: #000;
+  }
+}
+
+.modal__input {
+  width: 48%;
+  height: 44px;
+  padding: 6px;
+  padding-left: 22px;
+  
+  &--file {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.modal__message {
+  width: 100%;
+  height: 175px;
+  min-height: 175px;
+  padding: 20px;
+}
+
+.modal__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.modal__label {
+  display: block;
+  position: relative;
+  width: 136px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1;
+  color: #000;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  padding-left: 40px;
+  cursor: pointer;
+  .transition();
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 15px;
+    width: 27px;
+    height: 21px;
+    background-image: url(../img/icons/pic.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &:hover,
+  &:active {
+    background-color: @yellow;
+    .transition();
+  }
+}
+
+.modal__file {
+  display: none;
+}
+
+.modal__btn {
+  margin-left: auto;
+  font-size: 18px;
+}

@@ -330,6 +330,15 @@
   .table__remove .btn {
     margin-right: 0;
   }
+  .modal {
+    padding: 20px;
+  }
+  .modal__wrap {
+    display: block;
+  }
+  .modal__input {
+    width: 100%;
+  }
 }
 
 //-------------------------------------------------------------
@@ -351,9 +360,14 @@
     line-height: 28px;
   }
   h2,
-  .title-2 {
+  .title-2,
+  .review__name {
     font-size: 18px;
     line-height: 24px;
+  }
+  .review__text {
+    font-size: 14px;
+    line-height: 18px;
   }
   .info__avatar {
     width: 100%;
@@ -430,5 +444,39 @@
         .transition();
       }
     }
+  }
+  .review__item {
+    padding: 10px;
+    padding-top: 30px;
+    margin-bottom: 140px;
+    position: relative;
+  }
+  .review__edit,
+  .review__delete {
+    width: 48%;
+  }
+  .review__btns {
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    right: 0;
+  }
+  .review__text {
+    margin-bottom: 20px;
+  }
+  .review__video {
+    margin-bottom: 0;
+  }
+  .modal__message,
+  .modal__input {
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .modal__input {
+    padding-left: 10px;
+  }
+  .modal__btn {
+    margin-left: 0;
   }
 }
