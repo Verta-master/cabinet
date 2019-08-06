@@ -1015,6 +1015,7 @@ h1 {
 }
 .form__select option[disabled] {
   display: none;
+  color: #828282;
 }
 .form__select::-ms-expand {
   color: transparent;
@@ -1033,10 +1034,11 @@ h1 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .form__item {
   width: 25%;
+  margin-bottom: 11px;
 }
 .form__checkbox {
   display: none;
@@ -1045,7 +1047,7 @@ h1 {
   position: relative;
   display: block;
   padding-left: 34px;
-  margin-bottom: 15px;
+  padding-right: 10px;
 }
 .form__label::before {
   content: "";
@@ -1069,6 +1071,19 @@ h1 {
 }
 .form__checkbox:checked + .form__label::after {
   display: block;
+}
+.form__field {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin-bottom: 40px;
+}
+.form__field .title-2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.form__btn-speciality {
+  font-size: 18px;
 }
 @media (max-width: 1170px) {
   .wrapper {
@@ -1337,6 +1352,9 @@ h1 {
   .footer__block {
     margin-bottom: 20px;
   }
+  .form__item {
+    width: 50%;
+  }
 }
 @media (max-width: 766px) {
   .form__wrap {
@@ -1347,8 +1365,13 @@ h1 {
     width: 100%;
     padding-left: 25px;
   }
+  .form__select {
+    width: 100%;
+  }
 }
 @media (max-width: 480px) {
+  .form__btn-speciality,
+  .form__item,
   .info__btn,
   .info__link,
   .form__btn {
@@ -1361,6 +1384,11 @@ h1 {
   .title h1 {
     font-size: 24px;
     line-height: 28px;
+  }
+  h2,
+  .title-2 {
+    font-size: 18px;
+    line-height: 24px;
   }
   .info__avatar {
     width: 100%;
