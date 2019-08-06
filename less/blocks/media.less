@@ -178,6 +178,9 @@
       }
     }
   }
+  .info__list {
+    margin-right: 0;
+  }
 }
 
 //-------------------------------------------------------------
@@ -374,5 +377,58 @@
     height: 214px;
     min-width: 214px;
   }
-  
+  .info__item {
+    margin-right: 0;
+    width: 100%;
+    height: auto;
+  }
+  .info__cert {
+    margin-bottom: 14px;
+    height: 225px;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .info__delete {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 160px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    .transition();
+    
+    svg {
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      bottom: -5px;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background-color: @yellow;
+      .transition();
+    }
+
+    &:hover,
+    &:active {
+      &::after {
+        bottom: 0;
+        height: 100%;
+        .transition();
+      }
+    }
+  }
 }
