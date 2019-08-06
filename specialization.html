@@ -55,7 +55,7 @@
  
   <header class="header header--main">
     <div class="wrapper header__top">
-      <div class="logo">
+      <a href="index.html" class="logo">
         <svg width="113" height="36" viewBox="0 0 113 36" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
           <path class="logo__black" d="M14.5 0H0V36H14.5V0Z"/>
           <path class="logo__red" d="M14.5 18H0L14.5 0H29L14.5 18Z"/>
@@ -68,7 +68,7 @@
           <path class="logo__red" d="M105.74 27.5294L113 18.3598L98.5 0H84L96.906 16.3289L105.74 27.5294Z"/>
           <path class="logo__green" d="M98.5 18H113L98.5 36H84L98.5 18Z"/>
         </svg>
-      </div>
+      </a>
       <nav class="menu">
         <button type="button" class="menu__btn menu__btn--open">
           <svg class="menu__ham" width="32" height="28" viewBox="0 0 32 28" xmlns="http://www.w3.org/2000/svg">
@@ -160,101 +160,105 @@
         </div>
         
         <form action="#" class="form">
-          <p class="title-2">Основная специализация</p>
-          <select class="form__select">
-            <option value="" selected disabled>( не выбрана )</option>
-            <option value="1">Проект-менеджер</option>
-            <option value="2">Контекстолог</option>
-            <option value="3">Копирайтер</option>
-            <option value="4">Маркетолог</option>
-            <option value="5">Таргетолог</option>
-            <option value="6">Дизайнер</option>
-            <option value="7">SMM</option>
-          </select>
-          <p class="title-2">Дополнительные специализации</p>
-          <ul class="form__list">
-            <li class="form__item">
-              <input type="checkbox" id="check1" class="form__checkbox" checked>
-              <label for="check1" class="form__label">Дизайнер</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="check2" class="form__checkbox" checked>
-              <label for="check2" class="form__label">Дизайнер</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="check3" class="form__checkbox" checked>
-              <label for="check3" class="form__label">Дизайнер</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="check4" class="form__checkbox" checked>
-              <label for="check4" class="form__label">Дизайнер</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="check5" class="form__checkbox">
-              <label for="check5" class="form__label">Глиномес</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="check6" class="form__checkbox">
-              <label for="check6" class="form__label">Глиномес</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="check7" class="form__checkbox">
-              <label for="check7" class="form__label">Глиномес</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="check8" class="form__checkbox">
-              <label for="check8" class="form__label">Глиномес</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="check9" class="form__checkbox">
-              <label for="check9" class="form__label">Ватокат</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="check10" class="form__checkbox">
-              <label for="check10" class="form__label">Ватокат</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="check11" class="form__checkbox">
-              <label for="check11" class="form__label">Ватокат</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="check12" class="form__checkbox">
-              <label for="check12" class="form__label">Ватокат</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="check13" class="form__checkbox">
-              <label for="check13" class="form__label">Прокрастинатор</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="check14" class="form__checkbox">
-              <label for="check14" class="form__label">Прокрастинатор</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="check15" class="form__checkbox">
-              <label for="check15" class="form__label">Прокрастинатор</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="check16" class="form__checkbox">
-              <label for="check16" class="form__label">Прокрастинатор</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="check17" class="form__checkbox">
-              <label for="check17" class="form__label">Профессия: Китаец</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="check18" class="form__checkbox">
-              <label for="check18" class="form__label">Профессия: Китаец</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="check19" class="form__checkbox">
-              <label for="check19" class="form__label">Профессия: Китаец</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="check20" class="form__checkbox">
-              <label for="check20" class="form__label">Профессия: Китаец</label>
-            </li>
-          </ul>
-          <button class="btn btn--green form__btn-left">Сохранить</button>
+          <fieldset class="form__field">
+            <p class="title-2">Основная специализация</p>
+            <select class="form__select">
+              <option value="" selected disabled>( не выбрана )</option>
+              <option value="1">Проект-менеджер</option>
+              <option value="2">Контекстолог</option>
+              <option value="3">Копирайтер</option>
+              <option value="4">Маркетолог</option>
+              <option value="5">Таргетолог</option>
+              <option value="6">Дизайнер</option>
+              <option value="7">SMM</option>
+            </select>
+          </fieldset>
+          <fieldset class="form__field">
+            <p class="title-2">Дополнительные специализации</p>
+            <ul class="form__list">
+              <li class="form__item">
+                <input type="checkbox" id="check1" class="form__checkbox" checked>
+                <label for="check1" class="form__label">Дизайнер</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" id="check2" class="form__checkbox" checked>
+                <label for="check2" class="form__label">Дизайнер</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" id="check3" class="form__checkbox" checked>
+                <label for="check3" class="form__label">Дизайнер</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" id="check4" class="form__checkbox" checked>
+                <label for="check4" class="form__label">Дизайнер</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" id="check5" class="form__checkbox">
+                <label for="check5" class="form__label">Глиномес</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" id="check6" class="form__checkbox">
+                <label for="check6" class="form__label">Глиномес</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" id="check7" class="form__checkbox">
+                <label for="check7" class="form__label">Глиномес</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" id="check8" class="form__checkbox">
+                <label for="check8" class="form__label">Глиномес</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" id="check9" class="form__checkbox">
+                <label for="check9" class="form__label">Ватокат</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" id="check10" class="form__checkbox">
+                <label for="check10" class="form__label">Ватокат</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" id="check11" class="form__checkbox">
+                <label for="check11" class="form__label">Ватокат</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" id="check12" class="form__checkbox">
+                <label for="check12" class="form__label">Ватокат</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" id="check13" class="form__checkbox">
+                <label for="check13" class="form__label">Прокрастинатор</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" id="check14" class="form__checkbox">
+                <label for="check14" class="form__label">Прокрастинатор</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" id="check15" class="form__checkbox">
+                <label for="check15" class="form__label">Прокрастинатор</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" id="check16" class="form__checkbox">
+                <label for="check16" class="form__label">Прокрастинатор</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" id="check17" class="form__checkbox">
+                <label for="check17" class="form__label">Профессия: Китаец</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" id="check18" class="form__checkbox">
+                <label for="check18" class="form__label">Профессия: Китаец</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" id="check19" class="form__checkbox">
+                <label for="check19" class="form__label">Профессия: Китаец</label>
+              </li>
+              <li class="form__item">
+                <input type="checkbox" id="check20" class="form__checkbox">
+                <label for="check20" class="form__label">Профессия: Китаец</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="btn btn--green form__btn-speciality">Сохранить</button>
         </form>
       </div>
     </section>

@@ -64,6 +64,7 @@
 
   option[disabled] {
     display: none;
+    color: #828282;
   }
   
   &::-ms-expand {
@@ -79,11 +80,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .form__item {
   width: 25%;
+  margin-bottom: 11px;
 }
 
 .form__checkbox {
@@ -94,7 +96,7 @@
   position: relative;
   display: block;
   padding-left: 34px;
-  margin-bottom: 15px;
+  padding-right: 10px;
   
   &::before {
     content: "";
@@ -120,4 +122,19 @@
 
 .form__checkbox:checked + .form__label::after {
   display: block;
+}
+
+.form__field {
+  .reset();
+  border: 0;
+  margin-bottom: 40px;
+  
+  .title-2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.form__btn-speciality {
+  font-size: 18px;
 }
