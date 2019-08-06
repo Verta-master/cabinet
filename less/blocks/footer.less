@@ -1,0 +1,43 @@
+.footer {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  background-color: #FFC856;
+  
+  &--portfolio {
+    color: #fff;
+    background-color: @green;
+  }
+  &--black {
+    color: #fff;
+    background-color: @black;
+  }
+  &--yellow {
+    background-color: @yellow;
+  }
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__block {
+  &:last-of-type {
+    text-align: right;
+  }
+  
+  a {
+    display: block;
+    text-decoration: underline;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+  
+  p {
+    margin: 0;
+  }
+}
