@@ -120,8 +120,16 @@
 }
 
 .btn--plus {
-  background-image: url(../img/icons/plus.svg);
-  background-repeat: no-repeat;
-  background-size: 16px 16px;
-  background-position: left 20px center;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/icons/plus.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
