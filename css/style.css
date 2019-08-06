@@ -1400,7 +1400,7 @@ h1 {
     display: flex;
     margin-top: 15px;
   }
-  .info .title .btn {
+  .info__hidden {
     display: none;
   }
   .footer {
@@ -1423,6 +1423,9 @@ h1 {
   }
 }
 @media (max-width: 766px) {
+  .table,
+  .table tbody,
+  .table td,
   .form__wrap {
     display: block;
   }
@@ -1434,8 +1437,78 @@ h1 {
   .form__select {
     width: 100%;
   }
+  .title {
+    display: block;
+    margin-bottom: 45px;
+  }
+  .title .btn {
+    margin-top: 25px;
+  }
+  .table__header {
+    display: none;
+  }
+  .table__line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 13px;
+    padding: 20px 25px;
+    border: 1px solid #000000;
+  }
+  .table td {
+    border: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .table td:first-child {
+    padding-left: 0;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .table__time {
+    width: 50%;
+    margin-bottom: 25px;
+    color: #FFC856;
+    font-weight: 700;
+    text-align: left;
+  }
+  .table__price {
+    width: 50%;
+    margin-bottom: 25px;
+    color: #007550;
+    font-weight: 700;
+    text-align: right;
+  }
+  .table__edit,
+  .table__remove {
+    width: 50%;
+  }
+  .table__edit .btn,
+  .table__remove .btn {
+    width: 120px;
+  }
+  .table__edit .btn::after,
+  .table__remove .btn::after {
+    display: block;
+  }
+  .table__edit .btn:hover,
+  .table__remove .btn:hover,
+  .table__edit .btn:active,
+  .table__remove .btn:active {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .table__edit .btn {
+    margin-left: 0;
+  }
+  .table__remove .btn {
+    margin-right: 0;
+  }
 }
 @media (max-width: 480px) {
+  .title .btn,
   .form__btn-speciality,
   .form__item,
   .info__btn,
