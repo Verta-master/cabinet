@@ -45,3 +45,79 @@
 .form__btn {
   margin-left: auto;
 }
+
+.form__select {
+  display: block;
+  width: 545px;
+  height: 55px;
+  max-width: 100%;
+  padding: 10px;
+  border: 1px solid #BDBDBD;
+  border-radius: 2px;
+  background-color: #fff;
+  appearance: none;
+  background-image: url(../img/icons/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: 15px 18px;
+  background-position: right 20px center;
+  outline: none;
+
+  option[disabled] {
+    display: none;
+  }
+  
+  &::-ms-expand {
+    color: transparent;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.form__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.form__item {
+  width: 25%;
+}
+
+.form__checkbox {
+  display: none;
+}
+
+.form__label {
+  position: relative;
+  display: block;
+  padding-left: 34px;
+  margin-bottom: 15px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+  }
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: @black;
+  }
+}
+
+.form__checkbox:checked + .form__label::after {
+  display: block;
+}
