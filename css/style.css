@@ -485,8 +485,8 @@ h1 {
   display: none;
 }
 .title {
-  margin-top: 175px;
-  margin-bottom: 35px;
+  margin-top: 172px;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,6 +504,9 @@ h1 {
   letter-spacing: 0.02em;
   font-weight: 500;
   color: #000;
+}
+.title .btn {
+  margin-top: 5px;
 }
 .header {
   position: fixed;
@@ -523,6 +526,8 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .logo svg {
   display: block;
@@ -565,13 +570,18 @@ h1 {
 .nav__link {
   display: block;
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   text-align: center;
   font-size: 14px;
   line-height: 1;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
+}
+.menu {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .menu__btn {
   display: none;
@@ -589,11 +599,11 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 54px;
+  padding-left: 30px;
 }
 .menu__item {
-  padding-left: 44px;
-  padding-right: 44px;
+  padding-left: 45px;
+  padding-right: 45px;
   padding-top: 12px;
   padding-bottom: 13px;
 }
@@ -611,7 +621,7 @@ h1 {
           align-items: center;
 }
 .menu__item:last-child .menu__link {
-  padding: 5px 20px;
+  padding: 5px 22px;
   line-height: 1;
   border: 1px solid #000000;
   -webkit-transition: ease-out 0.3s;
@@ -763,7 +773,7 @@ h1 {
   content: "";
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: 17px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 21px;
@@ -778,28 +788,28 @@ h1 {
 }
 @-webkit-keyframes moveRight {
   0% {
-    right: 20px;
+    right: 17px;
   }
   50% {
     right: 10px;
   }
   100% {
-    right: 20px;
+    right: 17px;
   }
 }
 @keyframes moveRight {
   0% {
-    right: 20px;
+    right: 17px;
   }
   50% {
     right: 10px;
   }
   100% {
-    right: 20px;
+    right: 17px;
   }
 }
 .btn--pic {
-  padding-left: 47px;
+  padding-left: 40px;
 }
 .btn--pic::before {
   content: "";
@@ -874,9 +884,12 @@ h1 {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-.info__img {
+.info__avatar {
   width: 250px;
-  margin-bottom: 14px;
+  margin-top: -5px;
+}
+.info__img {
+  margin-bottom: 15px;
 }
 .info__img img {
   width: 250px;
