@@ -5,10 +5,7 @@
   <meta name="robots" content="noindex">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Клуб Сытых Фрилансеров</title>
-  <link rel="icon" href="img/icons/favicon.gif" type="image/gif">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic-ext" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="icon" href="img/favicons/1.png" type="image/png">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -140,7 +137,7 @@
               </svg>
             </a>
           </li>
-          <li class="nav__item nav__item--active">
+          <li class="nav__item">
             <a href="portfolio.html" class="nav__link">Моё портфолио
               <svg class="nav__icon" width="29" height="32" viewBox="0 0 29 32" xmlns="http://www.w3.org/2000/svg">
                 <use href="#icon-4"></use>
@@ -167,218 +164,151 @@
   </header>
   
   <main>
-    <section class="info portfolio">
+    <section class="info">
       <div class="wrapper">
         <div class="title">
-          <h1>Мое портфолио</h1>
-          <ul class="portfolio__nav">
-            <li class="portfolio__point">Показательная</li>
-            <li class="portfolio__point">Вложения</li>
-            <li class="portfolio__point">На модерации</li>
-            <li class="portfolio__point">Шэринг</li>
-            <li class="portfolio__point">Опубликована</li>
-            <li class="portfolio__point">Не пройдена</li>
-          </ul>
-          <a href="#" class="btn btn--yellow btn--plus">Добавить работу</a>
+          <h1>Редактирование работы в портфолио</h1>
+        </div>
+
+        <div class="info__wrap">
+          <div class="info__avatar">
+            <figure class="info__img">
+              <img src="img/images/img-2.jpg" alt="Информация обо мне" width="249" height="251">
+            </figure>
+            <a href="#" class="btn btn--yellow info__link">Изменить обложку</a>
+          </div>
+          <info class="info__form">
+            <form action="#" method="post" class="form">
+              <div class="form__wrap form__wrap--edit">
+                <input type="text" class="form__input" placeholder="Название проекта">
+                <select class="form__select form__select--category">
+                  <option value="" selected="" disabled="">Категория</option>
+                  <option value="1">Лендинги</option>
+                  <option value="2">Контекстная реклама</option>
+                </select>
+                <input type="text" class="form__input form__input--full" placeholder="Описание проекта">
+                <div class="form__option">
+                  <input type="checkbox" id="share" class="form__check">
+                  <div class="form__sign form__sign--share">
+                    <svg width="17" height="15" viewBox="0 0 17 15" xmlns="http://www.w3.org/2000/svg">
+                      <use href="#icon-share"></use>
+                    </svg>
+                  </div>
+                  <label for="share" class="form__check-label">Разрешить шэринг?</label>
+                  <p class="form__comment">Это разрешение на использование работы другими участниками. Этой галочкой вы разрешаете выводить работу в портфолио других участников КСФ с указанием вашего авторства.</p>
+                </div>
+                <div class="form__option">
+                  <input type="checkbox" id="show" class="form__check">
+                  <div class="form__sign form__sign--show">
+                    <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                      <use href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <label for="show" class="form__check-label">Назначить показательной?</label>
+                  <p class="form__comment">Показательная работа показываеться Показательная работа показываеться Показательная работа показывае</p>
+                </div>
+                <div class="form__option">
+                  <p class="form__about form__about--red">Работа не прошла модерацию для публикации на главной странице сайта.</p>
+                </div>
+                <button type="submit" class="btn btn--green form__btn">Сохранить</button>
+              </div>
+            </form>
+          </info>
         </div>
         
-        <p class="title-2">Лендинги</p>
-        <div class="portfolio__slider">
-          <div class="swiper-container portfolio__list">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide portfolio__item">
-                <p class="portfolio__title">Продающий сайт для ООО “ООПЛЯ”</p>
-                <div class="portfolio__link">
-                  <img src="img/images/work-1.jpg" alt="портфолио" width="249" height="251">
-                  <div class="portfolio__star">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <use href="#icon-star"></use>
-                    </svg>
-                  </div>
-                  <div class="portfolio__share">
-                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <use href="#icon-share"></use>
-                    </svg>
-                  </div>
-                  <div class="portfolio__label portfolio__label--red"></div>
-                  <div class="portfolio__number">1</div>
-                </div>
-                <div class="portfolio__btns">
-                  <a href="edit.html" class="btn btn--yellow portfolio__edit">Редактировать</a>
-                  <a href="#" class="btn btn--yellow portfolio__delete">Удалить</a>
-                </div>
-              </div>
-              <div class="swiper-slide portfolio__item">
-                <p class="portfolio__title">Продающий сайт для ООО “ООПЛЯ”</p>
-                <div class="portfolio__link">
-                  <img src="img/images/work-2.jpg" alt="портфолио" width="249" height="251">
-                  <div class="portfolio__star">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <use href="#icon-star"></use>
-                    </svg>
-                  </div>
-                  <div class="portfolio__share">
-                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <use href="#icon-share"></use>
-                    </svg>
-                  </div>
-                  <div class="portfolio__label portfolio__label--yellow"></div>
-                  <div class="portfolio__number">3</div>
-                </div>
-                <div class="portfolio__btns">
-                  <a href="edit.html" class="btn btn--yellow portfolio__edit">Редактировать</a>
-                  <a href="#" class="btn btn--yellow portfolio__delete">Удалить</a>
-                </div>
-              </div>
-              <div class="swiper-slide portfolio__item">
-                <p class="portfolio__title">Продающий сайт для ООО “ООПЛЯ”</p>
-                <div class="portfolio__link">
-                  <img src="img/images/work-3.jpg" alt="портфолио" width="249" height="251">
-                  <div class="portfolio__star portfolio__star--active">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <use href="#icon-star"></use>
-                    </svg>
-                  </div>
-                  <div class="portfolio__share portfolio__share--active">
-                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <use href="#icon-share"></use>
-                    </svg>
-                  </div>
-                  <div class="portfolio__label portfolio__label--green"></div>
-                  <div class="portfolio__number">4</div>
-                </div>
-                <div class="portfolio__btns">
-                  <a href="edit.html" class="btn btn--yellow portfolio__edit">Редактировать</a>
-                  <a href="#" class="btn btn--yellow portfolio__delete">Удалить</a>
-                </div>
-              </div>
-              <div class="swiper-slide portfolio__item">
-                <p class="portfolio__title">Продающий сайт для ООО “ООПЛЯ”</p>
-                <div class="portfolio__link">
-                  <img src="img/images/work-4.jpg" alt="портфолио" width="249" height="251">
-                  <div class="portfolio__star">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <use href="#icon-star"></use>
-                    </svg>
-                  </div>
-                  <div class="portfolio__share">
-                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <use href="#icon-share"></use>
-                    </svg>
-                  </div>
-                  <div class="portfolio__label portfolio__label--green"></div>
-                  <div class="portfolio__number">5</div>
-                </div>
-                <div class="portfolio__btns">
-                  <a href="edit.html" class="btn btn--yellow portfolio__edit">Редактировать</a>
-                  <a href="#" class="btn btn--yellow portfolio__delete">Удалить</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination portfolio__pagination"></div>
-          </div>
-          <div class="swiper-button-prev portfolio__prev"></div>
-          <div class="swiper-button-next portfolio__next"></div>
+        <div class="title title--top">
+          <p>Прикрепленные файлы</p>
+          <a href="#" class="btn btn--yellow btn--plus info__hidden">Добавить файл</a>
         </div>
-        
-        <p class="title-2">Контекстная реклама</p>
-        <div class="portfolio__slider">
-          <div class="swiper-container portfolio__list2">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide portfolio__item">
-                <p class="portfolio__title">Продающий сайт для ООО “ООПЛЯ”</p>
-                <div class="portfolio__link">
-                  <img src="img/images/work-1.jpg" alt="портфолио" width="249" height="251">
-                  <div class="portfolio__star">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <use href="#icon-star"></use>
-                    </svg>
-                  </div>
-                  <div class="portfolio__share">
-                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <use href="#icon-share"></use>
-                    </svg>
-                  </div>
-                  <div class="portfolio__label portfolio__label--red"></div>
-                  <div class="portfolio__number">1</div>
-                </div>
-                <div class="portfolio__btns">
-                  <a href="edit.html" class="btn btn--yellow portfolio__edit">Редактировать</a>
-                  <a href="#" class="btn btn--yellow portfolio__delete">Удалить</a>
-                </div>
-              </div>
-              <div class="swiper-slide portfolio__item">
-                <p class="portfolio__title">Продающий сайт для ООО “ООПЛЯ”</p>
-                <div class="portfolio__link">
-                  <img src="img/images/work-2.jpg" alt="портфолио" width="249" height="251">
-                  <div class="portfolio__star">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <use href="#icon-star"></use>
-                    </svg>
-                  </div>
-                  <div class="portfolio__share">
-                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <use href="#icon-share"></use>
-                    </svg>
-                  </div>
-                  <div class="portfolio__label portfolio__label--yellow"></div>
-                  <div class="portfolio__number">3</div>
-                </div>
-                <div class="portfolio__btns">
-                  <a href="edit.html" class="btn btn--yellow portfolio__edit">Редактировать</a>
-                  <a href="#" class="btn btn--yellow portfolio__delete">Удалить</a>
-                </div>
-              </div>
-              <div class="swiper-slide portfolio__item">
-                <p class="portfolio__title">Продающий сайт для ООО “ООПЛЯ”</p>
-                <div class="portfolio__link">
-                  <img src="img/images/work-3.jpg" alt="портфолио" width="249" height="251">
-                  <div class="portfolio__star portfolio__star--active">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <use href="#icon-star"></use>
-                    </svg>
-                  </div>
-                  <div class="portfolio__share portfolio__share--active">
-                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <use href="#icon-share"></use>
-                    </svg>
-                  </div>
-                  <div class="portfolio__label portfolio__label--green"></div>
-                  <div class="portfolio__number">4</div>
-                </div>
-                <div class="portfolio__btns">
-                  <a href="edit.html" class="btn btn--yellow portfolio__edit">Редактировать</a>
-                  <a href="#" class="btn btn--yellow portfolio__delete">Удалить</a>
-                </div>
-              </div>
-              <div class="swiper-slide portfolio__item">
-                <p class="portfolio__title">Продающий сайт для ООО “ООПЛЯ”</p>
-                <div class="portfolio__link">
-                  <img src="img/images/work-4.jpg" alt="портфолио" width="249" height="251">
-                  <div class="portfolio__star">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <use href="#icon-star"></use>
-                    </svg>
-                  </div>
-                  <div class="portfolio__share">
-                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <use href="#icon-share"></use>
-                    </svg>
-                  </div>
-                  <div class="portfolio__label portfolio__label--green"></div>
-                  <div class="portfolio__number">5</div>
-                </div>
-                <div class="portfolio__btns">
-                  <a href="edit.html" class="btn btn--yellow portfolio__edit">Редактировать</a>
-                  <a href="#" class="btn btn--yellow portfolio__delete">Удалить</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination portfolio__pagination2"></div>
-          </div>
-          <div class="swiper-button-prev portfolio__prev2"></div>
-          <div class="swiper-button-next portfolio__next2"></div>
-        </div>
+        <table class="table table--files">
+          <tr class="table__header">
+            <th>Название файла</th>
+            <th>Размер</th>
+            <th>Дата</th>
+            <th></th>
+          </tr>
+          <tr class="table__line">
+            <td class="table__file">
+              <a href="#" download="">landing_subserf.pdf</a>
+            </td>
+            <td class="table__size">9 Мб</td>
+            <td class="table__date">22.07.19</td>
+            <td class="table__remove">
+              <a href="#" class="btn btn--yellow">Удалить</a>
+            </td>
+          </tr>
+          <tr class="table__line">
+            <td class="table__file">
+              <a href="#" download="">landing_subserf.pdf</a>
+            </td>
+            <td class="table__size">9 Мб</td>
+            <td class="table__date">22.07.19</td>
+            <td class="table__remove">
+              <a href="#" class="btn btn--yellow">Удалить</a>
+            </td>
+          </tr>
+          <tr class="table__line">
+            <td class="table__file">
+              <a href="#" download="">landing_subserf.pdf</a>
+            </td>
+            <td class="table__size">9 Мб</td>
+            <td class="table__date">22.07.19</td>
+            <td class="table__remove">
+              <a href="#" class="btn btn--yellow">Удалить</a>
+            </td>
+          </tr>
+          <tr class="table__line">
+            <td class="table__file">
+              <a href="#" download="">landing_subserf.pdf</a>
+            </td>
+            <td class="table__size">9 Мб</td>
+            <td class="table__date">22.07.19</td>
+            <td class="table__remove">
+              <a href="#" class="btn btn--yellow">Удалить</a>
+            </td>
+          </tr>
+          <tr class="table__line">
+            <td class="table__file">
+              <a href="#" download="">landing_subserf.pdf</a>
+            </td>
+            <td class="table__size">9 Мб</td>
+            <td class="table__date">22.07.19</td>
+            <td class="table__remove">
+              <a href="#" class="btn btn--yellow">Удалить</a>
+            </td>
+          </tr>
+          <tr class="table__line">
+            <td class="table__file">
+              <a href="#" download="">landing_subserf.pdf</a>
+            </td>
+            <td class="table__size">9 Мб</td>
+            <td class="table__date">22.07.19</td>
+            <td class="table__remove">
+              <a href="#" class="btn btn--yellow">Удалить</a>
+            </td>
+          </tr>
+          <tr class="table__line">
+            <td class="table__file">
+              <a href="#" download="">landing_subserf.pdf</a>
+            </td>
+            <td class="table__size">9 Мб</td>
+            <td class="table__date">22.07.19</td>
+            <td class="table__remove">
+              <a href="#" class="btn btn--yellow">Удалить</a>
+            </td>
+          </tr>
+          <tr class="table__line">
+            <td class="table__file">
+              <a href="#" download="">landing_subserf.pdf</a>
+            </td>
+            <td class="table__size">9 Мб</td>
+            <td class="table__date">22.07.19</td>
+            <td class="table__remove">
+              <a href="#" class="btn btn--yellow">Удалить</a>
+            </td>
+          </tr>
+        </table>
+        <a href="#" class="btn btn--yellow btn--plus info__btn">Добавить файл</a>
       </div>
     </section>
   </main>
@@ -397,9 +327,6 @@
   </footer>
   
   <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script src="js/menu.js"></script>
-  <script src="js/portfolio.js"></script>
 </body>
 </html>
