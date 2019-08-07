@@ -199,6 +199,58 @@
     margin-right: 0;
     margin-top: 50px;
   }
+  .nav--text {
+    position: relative;
+    
+    .wrapper {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .nav__list {
+      display: block;
+      border: 0;
+      
+      &::after {
+        display: none;
+      }
+    }
+    .nav__item {
+      width: 100%;
+      border: 0;
+      border-top: 1px solid #4F4F4F;
+      
+      &:first-child {
+        border-top: 0;
+      }
+      
+      &:nth-child(n + 2) {
+        display: none;
+      }
+    }
+    .nav__link {
+      padding-top: 21px;
+      padding-bottom: 21px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+  .nav__btn {
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-image: url(../img/icons/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px 12px;
+    
+    &--open {
+      transform: rotate(180deg);
+    }
+  }
 }
 
 //-------------------------------------------------------------
@@ -263,6 +315,15 @@
   }
   .form__item {
     width: 50%;
+  }
+  .lesson__columns {
+    flex-direction: column-reverse;
+  }
+  .lesson {
+    margin-top: 100px;
+  }
+  .lesson__aside {
+    margin-bottom: 45px;
   }
 }
 
@@ -436,10 +497,14 @@
   }
   h2,
   .title-2,
-  .review__name {
+  .review__name,
+  .lesson__strong {
     font-size: 18px;
     line-height: 24px;
   }
+  .home,
+  .lesson__text,
+  .lesson__subtitle,
   .review__text {
     font-size: 14px;
     line-height: 18px;
@@ -614,5 +679,24 @@
   .title--top {
     margin-top: 60px;
     margin-bottom: 24px;
+  }
+  .nav--text {
+    .nav__link {
+      padding-left: 20px;
+      text-align: left;
+      justify-content: flex-start;
+    }
+  }
+  .lesson__aside {
+    margin-bottom: 30px;
+  }
+  .lesson {
+    margin-bottom: 45px;
+  }
+  .home .form__message {
+    height: 290px;
+  }
+  .btn-main {
+    width: 100%;
   }
 }

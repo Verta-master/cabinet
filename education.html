@@ -93,10 +93,10 @@
           </svg>
         </button>
         <ul class="menu__list">
-          <li class="menu__item">
+          <li class="menu__item menu__item--active">
             <a href="education.html" class="menu__link">Обучение</a>
           </li>
-          <li class="menu__item menu__item--active">
+          <li class="menu__item">
             <a href="profile.html" class="menu__link">Мой профиль</a>
           </li>
           <li class="menu__item">
@@ -109,50 +109,30 @@
         </ul>
       </nav>
     </div>
-    <nav class="nav">
+    <nav class="nav nav--text">
       <div class="wrapper">
+        <button type="button" class="nav__btn"></button>
         <ul class="nav__list">
-          <li class="nav__item">
-            <a href="index.html" class="nav__link">Информация обо мне
-              <svg class="nav__icon" width="21" height="24" viewBox="0 0 21 24" xmlns="http://www.w3.org/2000/svg">
-                <use href="#icon-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="specialization.html" class="nav__link">Мои специализации
-              <svg class="nav__icon" width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
-                <use href="#icon-2"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="service.html" class="nav__link">Мои услуги
-              <svg class="nav__icon" width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-                <use href="#icon-3"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="portfolio.html" class="nav__link">Моё портфолио
-              <svg class="nav__icon" width="29" height="32" viewBox="0 0 29 32" xmlns="http://www.w3.org/2000/svg">
-                <use href="#icon-4"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="certificate.html" class="nav__link">Мои сертификаты
-              <svg class="nav__icon" width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
-                <use href="#icon-5"></use>
-              </svg>
-            </a>
-          </li>
           <li class="nav__item nav__item--active">
-            <a href="review.html" class="nav__link">Мои отзывы
-              <svg class="nav__icon" width="29" height="25" viewBox="0 0 29 25" xmlns="http://www.w3.org/2000/svg">
-                <use href="#icon-6"></use>
-              </svg>
-            </a>
+            <a href="education.html" class="nav__link">Технология Посадочных Страниц</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Технология Продающего Инстаграма</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Технология Мощных Запусков</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Технология Таргета ВК</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Технология Контекстной Рекламы</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Технология Продающего Текста</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Технология Удобного Меню</a>
           </li>
         </ul>
       </div>
@@ -160,52 +140,49 @@
   </header>
   
   <main>
-    <section class="info">
+    <section class="lesson">
       <div class="wrapper">
-        <div class="title">
-          <h1>Мои отзывы</h1>
-          <a href="#" class="btn btn--yellow btn--plus">Добавить отзыв</a>
+        <div class="lesson__columns">
+          <div class="lesson__content">
+            <p class="lesson__subtitle">Технология Контекстной Рекламы</p>
+            <h1 class="title-2">#1.1 ОРГАНИЗАЦИОННЫЕ МОМЕНТЫ</h1>
+            <div class="lesson__text">
+              <p>Курс направлен на изучение конкретной темы - настройка контекстной рекламы.</p>
+              <p>Я писал уроки, исходя из того, что у Вас уже есть определенный набор знаний.</p>
+              <p>Поэтому в уроках не затронуты некоторые моменты.</p>
+              <p>Например, я не научу Вас пользоваться Excel или языку html, потому что это знания, которые выходят за рамки курса.</p>
+              <p class="lesson__strong">Что делать, если у Вас возникнет проблема с той областью знаний, которая выходит за рамки курса?</p>
+              <p>1. Вы можете погуглить - всю работу уже сделали за нас и расписали это в куче инструкций. Достаточно просто спросить в поисковике.<br>2.Вы можете найти человека, который компетентен в данном вопросе (знакомый или найти фрилансера, который сделает супер-сложную для Вас задачу за 100 рублей в течение 5 минут).</p>
+              <p>Все эти мелкие вопросы решаются на самом деле легко и быстро:)</p>
+              <p>Это тот момент, который Нам стоит решить сразу, чтоб потом Вы не обижались на меня за то, что я не отвечаю, как скопировать и вставить текст:)</p>
+            </div>
+          </div>
+          
+          <aside class="lesson__aside">
+            <a href="#" class="btn btn--yellow btn--arrow-left">Вернуться к курсу</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+    
+    <section class="home">
+      <div class="wrapper">
+        <p class="title-2">ДОМАШНЕЕ ЗАДАНИЕ</p>
+        <ul>
+          <li>Принять условия.</li>
+          <li>Принять условия.</li>
+        </ul>
+        <a href="#" class="link-down"><span>Как прикрепить скриншот?</span></a>
+        <div class="home__comment">
+          <b>Ваше домашнее задание принято с таким комментарием:</b>
+          <p>азино три топора</p>
         </div>
         
-        <ul class="review">
-          <li class="review__item">
-            <figure class="review__img">
-              <img src="img/images/person.jpg" alt="Мои отзывы" width="900" height="506">
-            </figure>
-            <p class="review__name">Александра Gray</p>
-            <div class="review__text">
-              <p>Спасибо Славе за его профессионализм. Вставил сразу 3 варианта! 3в1! Моей любовнице нравится, хотя она бухгалтер. Еще и продажи выросли. Я счастлива. обращайтесь все к нему.</p>
-            </div>
-            <div class="review__btns">
-              <a data-fancybox data-src="#call" href="javascript:;" class="btn btn--yellow review__edit">Редактировать</a>
-              <a href="#" class="btn btn--yellow review__delete">Удалить</a>
-            </div>
-          </li>
-          <li class="review__item">
-            <figure class="review__img">
-              <img src="img/images/person.jpg" alt="Мои отзывы" width="900" height="506">
-            </figure>
-            <p class="review__name">Александра Gray</p>
-            <div class="review__text">
-              <p>Спасибо Славе за его профессионализм. Вставил сразу 3 варианта! 3в1! Моей любовнице нравится, хотя она бухгалтер. Еще и продажи выросли. Я счастлива. обращайтесь все к нему.</p>
-            </div>
-            <div class="review__video">
-              <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="review__link">
-                <img src="img/images/person.jpg" alt="Мои отзывы" width="900" height="506">
-              </a>
-              <button type="button" class="review__play">
-                <svg width="82" height="82" viewBox="0 0 82 82" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M28.5 27.152C28.5 23.593 32.4363 21.4425 35.4312 23.3653L58.1051 37.9228C60.8797 39.7042 60.8597 43.766 58.0678 45.52L35.3938 59.7645C32.397 61.6472 28.5 59.4932 28.5 55.954V27.152Z"/>
-                  <circle cx="41" cy="41" r="40.5"/>
-                </svg>
-              </button>
-            </div>
-            <div class="review__btns">
-              <a data-fancybox data-src="#call" href="javascript:;" class="btn btn--yellow review__edit">Редактировать</a>
-              <a href="#" class="btn btn--yellow review__delete">Удалить</a>
-            </div>
-          </li>
-        </ul>
+        <p class="title-2">ВАШ РЕЗУЛЬТАТ</p>
+        <form action="#" method="post" class="form">
+          <textarea class="form__message" placeholder="але братан, а где поднять бобла"></textarea>
+          <button type="submit" class="btn-main">Отправить на проверку</button>
+        </form>
       </div>
     </section>
   </main>
@@ -223,30 +200,9 @@
     </div>
   </footer>
   
-  <!-- Modal window -->
-  <div style="display: none;" id="call" class="modal">
-    <form action="#" class="modal__form">
-      <figure class="modal__avatar">
-        <img src="img/icons/pic.svg" alt="Фотография отзывателя" width="34" height="27">
-      </figure>
-      <div class="modal__wrap">
-        <input type="text" class="modal__input" placeholder="Имя отзывателя">
-        <div class="modal__input modal__input--file">
-          <span>Фотография отзывателя</span>
-          <input type="file" id="file" class="modal__file">
-          <label for="file" class="modal__label">Загрузить</label>
-        </div>
-        <input type="text" class="modal__input" placeholder="Ссылка на ВК отзывателя">
-        <input type="text" class="modal__input" placeholder="Ссылка на видео отзыва на youtube">
-      </div>
-      <p class="modal__title">Отзыв</p>
-      <textarea class="modal__message">Спасибо Славе за его крепкую печень. Выпили за любовь и утвердили пятьсоттыщ макетов за два дня. Будем и дальше работать с ним. Спасибо за сына!</textarea>
-      <button type="submit" class="btn btn--green modal__btn">Сохранить</button>
-    </form>
-  </div>
-  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/menu-text.js"></script>
 </body>
 </html>

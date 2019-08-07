@@ -1,6 +1,37 @@
 .nav {
   color: #fff;
   background-color: @black;
+  
+  &--text {
+    .nav__list {
+      position: relative;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 1px;
+        background-color: #4F4F4F;
+      }
+    }
+    .nav__item {
+      flex-grow: 0;
+      width: 25%;
+      border-bottom: 1px solid #4F4F4F;
+    }
+    .nav__link {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+}
+
+.nav__btn {
+  display: none;
 }
 
 .nav__list {
