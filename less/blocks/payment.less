@@ -1,0 +1,133 @@
+.payment {
+  padding-bottom: 100px;
+}
+
+.payment__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1050px;
+}
+
+.payment__block {
+  width: 300px;
+  
+  &--profy {
+    padding-top: 60px;
+  }
+  &--mobile {
+    display: none;
+  }
+}
+
+.payment__center {
+  width: 370px;
+  padding-top: 65px;
+  
+  .payment__comment {
+    text-align: center;
+  }
+}
+
+.payment__price {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 28px;
+  
+  &--red {
+    margin-bottom: 5px;
+    color: @red;
+    
+  }
+  &--green {
+    margin-bottom: 5px;
+    color: @green;
+    font-weight: 700;
+  }
+  span {
+    position: relative;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: @black;
+    }
+  }
+}
+
+.payment__comment {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+.payment__btn {
+  width: 100%;
+  height: 54px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.timer-block {
+  position: relative;
+  background-color: #001E20;
+  padding: 15px;
+  color: #FFC856;
+  width: 110px;
+  height: 61px;
+  overflow: hidden;
+  
+  &::after {
+    content: "";
+    background-color: #FFC856;
+    width: 100%;
+    height: 7px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+  }
+  
+  p {
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    color: rgba(255, 212, 93, 0.5);
+    left: 50%;
+  }
+  .prev {
+    margin-top: -23px;
+  }
+  .next {
+    bottom: -5px;
+  }
+}
+
+.timer-block.seconds .current {
+  width: 27px;
+  text-align: right;
+  margin: -4px auto 0;
+}
