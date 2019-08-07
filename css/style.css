@@ -1562,24 +1562,26 @@ h1 {
 .portfolio__point:nth-child(6)::before {
   background-color: #FF513F;
 }
+.portfolio__list2,
 .portfolio__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  margin-right: -46px;
+}
+.portfolio__list2 .swiper-wrapper,
+.portfolio__list .swiper-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin-right: -46px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
 }
 .portfolio__item {
   width: 250px;
   margin-right: 46px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .portfolio__title {
   margin-top: 0;
@@ -1604,6 +1606,14 @@ h1 {
   border: 1px solid #001E20;
   border-radius: 2px;
   overflow: hidden;
+}
+.portfolio__link img {
+  display: block;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50%;
+     object-position: 50%;
 }
 .portfolio__star {
   position: absolute;
@@ -2234,5 +2244,61 @@ h1 {
   }
   .portfolio__point {
     width: 50%;
+  }
+  .portfolio__slider {
+    position: relative;
+  }
+  .portfolio__list2,
+  .portfolio__list {
+    margin-right: 0;
+  }
+  .portfolio__list2 .swiper-wrapper,
+  .portfolio__list .swiper-wrapper {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-top: -40px;
+    background-size: contain;
+    background-color: #fff;
+    outline: none;
+  }
+  .swiper-button-prev {
+    left: -10px;
+    background-image: url(../img/icons/angle_left.svg);
+    border-radius: 0 5px 0 0;
+  }
+  .swiper-button-next {
+    right: -10px;
+    background-image: url(../img/icons/angle_right-border.svg);
+    border-radius: 5px 0 0 0;
+  }
+  .swiper-pagination {
+    bottom: 50px !important;
+  }
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background-color: #fff;
+    border: 1px solid #001E20;
+    opacity: 1;
+    outline: none;
+  }
+  .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #001E20;
+  }
+  .portfolio__link {
+    margin-bottom: 40px;
+  }
+  .portfolio__item {
+    margin-right: 0;
+    margin-bottom: 0;
   }
 }
