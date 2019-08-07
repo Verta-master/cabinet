@@ -53,13 +53,35 @@
   &:active,
   &--active {
     .menu__link {
+      &::before,
       &::after {
         opacity: 1;
         width: 100%;
         .transition();
       }
     }
+    &:nth-child(2) {
+      .menu__link {
+        color: @green;
+        
+        &::before,
+        &::after {
+          background-color: @green;
+        }
+      }
+    }
+    &:nth-child(3) {
+      .menu__link {
+        color: @red;
+        
+        &::before,
+        &::after {
+          background-color: @red;
+        }
+      }
+    }
     &:last-child .menu__link {
+      &::before,
       &::after {
         width: 0;
         opacity: 0;
@@ -71,8 +93,8 @@
 .menu__link {
   display: block;
   position: relative;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 14px;
   line-height: 1;
   
@@ -81,18 +103,18 @@
     opacity: 0;
     position: absolute;
     content: "";
-    bottom: 0;
-    left: 0;
     width: 0;
-    height: 2px;
+    height: 1px;
     background-color: #001E20;
     .transition();
   }
   
   &::before {
     top: 0;
-    bottom: auto;
+    left: 0;
+  }
+  &::after {
+    bottom: 0;
     right: 0;
-    left: auto;
   }
 }
