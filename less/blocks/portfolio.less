@@ -74,19 +74,25 @@
   }
 }
 
+.portfolio__list2,
 .portfolio__list {
-  .reset();
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
   margin-right: -46px;
+  
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
 }
 
 .portfolio__item {
   width: 250px;
   margin-right: 46px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .portfolio__title {
@@ -107,6 +113,13 @@
   border: 1px solid #001E20;
   border-radius: 2px;
   overflow: hidden;
+  
+  img {
+    display: block;
+    min-width: 100%;
+    object-fit: cover;
+    object-position: 50%;
+  }
 }
 
 .portfolio__star {
