@@ -546,13 +546,10 @@ h2,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 .logo svg {
-  display: block;
-  width: 114px;
-  height: 29px;
+  width: 113px;
+  height: 36px;
 }
 .nav {
   color: #fff;
@@ -1020,7 +1017,6 @@ h2,
   font-size: 14px;
   line-height: 18px;
   padding-left: 30px;
-  margin-bottom: 45px;
 }
 .link-down span {
   border-bottom: 1px solid #001E20;
@@ -1212,6 +1208,9 @@ h2,
   -o-object-position: 50%;
      object-position: 50%;
 }
+.info__link {
+  cursor: pointer;
+}
 .form__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1355,6 +1354,7 @@ h2,
   width: 25%;
   margin-bottom: 11px;
 }
+.form__file,
 .form__check,
 .form__checkbox {
   display: none;
@@ -2134,6 +2134,22 @@ h2,
 .home__comment p {
   margin: 0;
 }
+.home__tip {
+  max-width: 600px;
+  margin-bottom: 45px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.home__tip-info {
+  display: none;
+}
+.home__tip-info a {
+  color: #2F80ED;
+}
+.home__tip-info a:hover,
+.home__tip-info a:active {
+  text-decoration: underline;
+}
 .modal-table {
   margin-bottom: 90px;
 }
@@ -2232,6 +2248,10 @@ h2,
 .modal-table__item p:first-child {
   padding-right: 100px;
 }
+.modal-table__item a:hover,
+.modal-table__item a:active {
+  color: #2F80ED;
+}
 .modal-table__item--finished p:first-child {
   position: relative;
   color: #2F80ED;
@@ -2247,6 +2267,10 @@ h2,
   background-image: url(../img/icons/icon-tick.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+.modal-table__item--finished a:hover,
+.modal-table__item--finished a:active {
+  color: #001E20;
 }
 .course {
   margin-top: 235px;
@@ -2910,6 +2934,7 @@ h2,
   height: 55px;
   margin-bottom: 20px;
   padding: 0 20px;
+  text-align: center;
   border: 1px solid #BDBDBD;
 }
 .login__input::-webkit-input-placeholder {

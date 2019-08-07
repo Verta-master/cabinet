@@ -1,0 +1,1 @@
+$(".link-down").click(function(e){e.preventDefault(),$(this).next().slideToggle()});

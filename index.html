@@ -160,16 +160,17 @@
           <a href="#" class="btn btn--yellow btn--arrow info__hidden">Страница профиля на сайте</a>
         </div>
 
-        <div class="info__wrap">
-          <div class="info__avatar">
-            <figure class="info__img">
-              <img src="img/images/man.jpg" alt="Информация обо мне" width="1205" height="877">
-            </figure>
-            <a href="#" class="btn btn--yellow btn--pic info__link">Изменить фотографию</a>
-            <a href="#" class="btn btn--yellow btn--arrow info__btn">Страница профиля на сайте</a>
-          </div>
-          <info class="info__form">
-            <form action="#" method="post" class="form">
+        <form action="#" method="post" class="form">
+          <div class="info__wrap">
+            <div class="info__avatar">
+              <figure class="info__img">
+                <img src="img/images/man.jpg" id="photo" alt="Информация обо мне" width="1205" height="877">
+              </figure>
+              <input type="file" id="file" class="form__file" onchange="readURL(this);">
+              <label for="file" class="btn btn--yellow btn--pic info__link">Изменить фотографию</label>
+              <a href="#" class="btn btn--yellow btn--arrow info__btn">Страница профиля на сайте</a>
+            </div>
+            <div class="info__form">
               <div class="form__wrap">
                 <input type="text" class="form__input" placeholder="Фамилия">
                 <input type="text" class="form__input" placeholder="Имя">
@@ -181,9 +182,9 @@
                 <textarea class="form__message" placeholder="Текст для окна контактов"></textarea>
               </div>
               <button type="submit" class="btn btn--green form__btn">Сохранить</button>
-            </form>
-          </info>
-        </div>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
   </main>
@@ -203,5 +204,6 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/image-load.js"></script>
 </body>
 </html>

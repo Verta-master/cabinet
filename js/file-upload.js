@@ -1,0 +1,1 @@
+$("#file").change(function(){$(this).prev("span").clone();var e=$("#file")[0].files[0].name;$(this).prev("span").text(e),$(this).prev("span").css("color","#000")});

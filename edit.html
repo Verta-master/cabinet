@@ -170,15 +170,16 @@
           <h1>Редактирование работы в портфолио</h1>
         </div>
 
-        <div class="info__wrap">
-          <div class="info__avatar">
-            <figure class="info__img">
-              <img src="img/images/img-2.jpg" alt="Информация обо мне" width="249" height="251">
-            </figure>
-            <a href="#" class="btn btn--yellow info__link">Изменить обложку</a>
-          </div>
-          <info class="info__form">
-            <form action="#" method="post" class="form">
+        <form action="#" method="post" class="form">
+          <div class="info__wrap">
+            <div class="info__avatar">
+              <figure class="info__img">
+                <img src="img/images/img-2.jpg" id="photo" alt="Информация обо мне" width="249" height="251">
+              </figure>
+              <input type="file" id="file" class="form__file" onchange="readURL(this);">
+              <label for="file" class="btn btn--yellow btn--pic info__link">Изменить обложку</label>
+            </div>
+            <div class="info__form">
               <div class="form__wrap form__wrap--edit">
                 <input type="text" class="form__input" placeholder="Название проекта">
                 <select class="form__select form__select--category">
@@ -212,9 +213,9 @@
                 </div>
                 <button type="submit" class="btn btn--green form__btn">Сохранить</button>
               </div>
-            </form>
-          </info>
-        </div>
+            </div>
+          </div>
+        </form>
         
         <div class="title title--top">
           <p>Прикрепленные файлы</p>
@@ -328,5 +329,6 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/image-load.js"></script>
 </body>
 </html>
