@@ -7,6 +7,7 @@
   <title>Клуб Сытых Фрилансеров</title>
   <link rel="icon" href="img/icons/favicon.gif" type="image/gif">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -51,6 +52,11 @@
       <path d="M17.3794 14.2984C17.0018 14.2984 16.6953 14.628 16.6953 15.034C16.6953 15.4401 17.0018 15.7696 17.3794 15.7696C17.7571 15.7696 18.0635 15.4401 18.0635 15.034C18.0635 14.628 17.7571 14.2984 17.3794 14.2984Z"></path>
       <path d="M23.7363 14.2984C23.3587 14.2984 23.0522 14.628 23.0522 15.034C23.0522 15.4401 23.3587 15.7696 23.7363 15.7696C24.114 15.7696 24.4204 15.4401 24.4204 15.034C24.4204 14.628 24.1139 14.2984 23.7363 14.2984Z"></path>
     </symbol>
+    <symbol id="icon-delete">
+      <rect x="0.5" y="0.5" width="19" height="19" rx="1.5"></rect>
+      <line x1="5.37985" y1="14.6464" x2="14.7131" y2="5.31314"></line>
+      <line x1="14.7129" y1="14.687" x2="5.37955" y2="5.35375"></line>
+    </symbol>
   </svg>
   <!-- End of SVG codes -->
  
@@ -87,10 +93,10 @@
           </svg>
         </button>
         <ul class="menu__list">
-          <li class="menu__item">
+          <li class="menu__item menu__item--active">
             <a href="education.html" class="menu__link">Обучение</a>
           </li>
-          <li class="menu__item menu__item--active">
+          <li class="menu__item">
             <a href="profile.html" class="menu__link">Мой профиль</a>
           </li>
           <li class="menu__item">
@@ -103,50 +109,30 @@
         </ul>
       </nav>
     </div>
-    <nav class="nav">
+    <nav class="nav nav--text">
       <div class="wrapper">
+        <button type="button" class="nav__btn"></button>
         <ul class="nav__list">
-          <li class="nav__item">
-            <a href="index.html" class="nav__link">Информация обо мне
-              <svg class="nav__icon" width="21" height="24" viewBox="0 0 21 24" xmlns="http://www.w3.org/2000/svg">
-                <use href="#icon-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="specialization.html" class="nav__link">Мои специализации
-              <svg class="nav__icon" width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
-                <use href="#icon-2"></use>
-              </svg>
-            </a>
-          </li>
           <li class="nav__item nav__item--active">
-            <a href="service.html" class="nav__link">Мои услуги
-              <svg class="nav__icon" width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-                <use href="#icon-3"></use>
-              </svg>
-            </a>
+            <a href="education.html" class="nav__link">Технология Посадочных Страниц</a>
           </li>
           <li class="nav__item">
-            <a href="portfolio.html" class="nav__link">Моё портфолио
-              <svg class="nav__icon" width="29" height="32" viewBox="0 0 29 32" xmlns="http://www.w3.org/2000/svg">
-                <use href="#icon-4"></use>
-              </svg>
-            </a>
+            <a href="#" class="nav__link">Технология Продающего Инстаграма</a>
           </li>
           <li class="nav__item">
-            <a href="certificate.html" class="nav__link">Мои сертификаты
-              <svg class="nav__icon" width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
-                <use href="#icon-5"></use>
-              </svg>
-            </a>
+            <a href="#" class="nav__link">Технология Мощных Запусков</a>
           </li>
           <li class="nav__item">
-            <a href="review.html" class="nav__link">Мои отзывы
-              <svg class="nav__icon" width="29" height="25" viewBox="0 0 29 25" xmlns="http://www.w3.org/2000/svg">
-                <use href="#icon-6"></use>
-              </svg>
-            </a>
+            <a href="#" class="nav__link">Технология Таргета ВК</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Технология Контекстной Рекламы</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Технология Продающего Текста</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Технология Удобного Меню</a>
           </li>
         </ul>
       </div>
@@ -154,110 +140,49 @@
   </header>
   
   <main>
-    <section class="info">
+    <section class="lesson">
       <div class="wrapper">
-        <div class="title">
-          <h1>Мои услуги</h1>
-          <a href="#" class="btn btn--yellow btn--plus">Добавить услугу</a>
+        <div class="lesson__columns">
+          <div class="lesson__content">
+            <p class="lesson__subtitle">Технология Контекстной Рекламы</p>
+            <h1 class="title-2">#1.1 ОРГАНИЗАЦИОННЫЕ МОМЕНТЫ</h1>
+            <div class="lesson__text">
+              <p>Курс направлен на изучение конкретной темы - настройка контекстной рекламы.</p>
+              <p>Я писал уроки, исходя из того, что у Вас уже есть определенный набор знаний.</p>
+              <p>Поэтому в уроках не затронуты некоторые моменты.</p>
+              <p>Например, я не научу Вас пользоваться Excel или языку html, потому что это знания, которые выходят за рамки курса.</p>
+              <p class="lesson__strong">Что делать, если у Вас возникнет проблема с той областью знаний, которая выходит за рамки курса?</p>
+              <p>1. Вы можете погуглить - всю работу уже сделали за нас и расписали это в куче инструкций. Достаточно просто спросить в поисковике.<br>2.Вы можете найти человека, который компетентен в данном вопросе (знакомый или найти фрилансера, который сделает супер-сложную для Вас задачу за 100 рублей в течение 5 минут).</p>
+              <p>Все эти мелкие вопросы решаются на самом деле легко и быстро:)</p>
+              <p>Это тот момент, который Нам стоит решить сразу, чтоб потом Вы не обижались на меня за то, что я не отвечаю, как скопировать и вставить текст:)</p>
+            </div>
+          </div>
+          
+          <aside class="lesson__aside">
+            <a href="#" class="btn btn--yellow btn--arrow-left">Вернуться к курсу</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+    
+    <section class="home">
+      <div class="wrapper">
+        <p class="title-2">ДОМАШНЕЕ ЗАДАНИЕ</p>
+        <ul>
+          <li>Принять условия.</li>
+          <li>Принять условия.</li>
+        </ul>
+        <a href="#" class="link-down"><span>Как прикрепить скриншот?</span></a>
+        <div class="home__comment">
+          <b>Ваше домашнее задание принято с таким комментарием:</b>
+          <p>азино три топора</p>
         </div>
         
-        <table class="table">
-          <tr class="table__header">
-            <th>Услуги</th>
-            <th>Сроки</th>
-            <th>Цены</th>
-            <th></th>
-            <th></th>
-          </tr>
-          <tr class="table__line">
-            <td>Делаю особую, уличную магию и получаю пиздюлей за хуёвый UX</td>
-            <td class="table__time">Постоянно</td>
-            <td class="table__price">99 000 ₽</td>
-            <td class="table__edit">
-              <a href="#" class="btn btn--yellow">Редактировать</a>
-            </td>
-            <td class="table__remove">
-              <a href="#" class="btn btn--yellow">Удалить</a>
-            </td>
-          </tr>
-          <tr class="table__line">
-            <td>Делаю особую, уличную магию и получаю пиздюлей за хуёвый UX</td>
-            <td class="table__time">Постоянно</td>
-            <td class="table__price">99 000 ₽</td>
-            <td class="table__edit">
-              <a href="#" class="btn btn--yellow">Редактировать</a>
-            </td>
-            <td class="table__remove">
-              <a href="#" class="btn btn--yellow">Удалить</a>
-            </td>
-          </tr>
-          <tr class="table__line">
-            <td>Делаю особую, уличную магию и получаю пиздюлей за хуёвый UX</td>
-            <td class="table__time">Постоянно</td>
-            <td class="table__price">99 000 ₽</td>
-            <td class="table__edit">
-              <a href="#" class="btn btn--yellow">Редактировать</a>
-            </td>
-            <td class="table__remove">
-              <a href="#" class="btn btn--yellow">Удалить</a>
-            </td>
-          </tr>
-          <tr class="table__line">
-            <td>Делаю особую, уличную магию и получаю пиздюлей за хуёвый UX</td>
-            <td class="table__time">Постоянно</td>
-            <td class="table__price">99 000 ₽</td>
-            <td class="table__edit">
-              <a href="#" class="btn btn--yellow">Редактировать</a>
-            </td>
-            <td class="table__remove">
-              <a href="#" class="btn btn--yellow">Удалить</a>
-            </td>
-          </tr>
-          <tr class="table__line">
-            <td>Делаю особую, уличную магию и получаю пиздюлей за хуёвый UX</td>
-            <td class="table__time">Постоянно</td>
-            <td class="table__price">99 000 ₽</td>
-            <td class="table__edit">
-              <a href="#" class="btn btn--yellow">Редактировать</a>
-            </td>
-            <td class="table__remove">
-              <a href="#" class="btn btn--yellow">Удалить</a>
-            </td>
-          </tr>
-          <tr class="table__line">
-            <td>Делаю особую, уличную магию и получаю пиздюлей за хуёвый UX</td>
-            <td class="table__time">Постоянно</td>
-            <td class="table__price">99 000 ₽</td>
-            <td class="table__edit">
-              <a href="#" class="btn btn--yellow">Редактировать</a>
-            </td>
-            <td class="table__remove">
-              <a href="#" class="btn btn--yellow">Удалить</a>
-            </td>
-          </tr>
-          <tr class="table__line">
-            <td>Делаю особую, уличную магию и получаю пиздюлей за хуёвый UX</td>
-            <td class="table__time">Постоянно</td>
-            <td class="table__price">99 000 ₽</td>
-            <td class="table__edit">
-              <a href="#" class="btn btn--yellow">Редактировать</a>
-            </td>
-            <td class="table__remove">
-              <a href="#" class="btn btn--yellow">Удалить</a>
-            </td>
-          </tr>
-          <tr class="table__line">
-            <td>Делаю особую, уличную магию и получаю пиздюлей за хуёвый UX</td>
-            <td class="table__time">Постоянно</td>
-            <td class="table__price">99 000 ₽</td>
-            <td class="table__edit">
-              <a href="#" class="btn btn--yellow">Редактировать</a>
-            </td>
-            <td class="table__remove">
-              <a href="#" class="btn btn--yellow">Удалить</a>
-            </td>
-          </tr>
-        </table>
+        <p class="title-2">ВАШ РЕЗУЛЬТАТ</p>
+        <form action="#" method="post" class="form">
+          <textarea class="form__message" placeholder="але братан, а где поднять бобла"></textarea>
+          <button type="submit" class="btn-main">Отправить на проверку</button>
+        </form>
       </div>
     </section>
   </main>
@@ -276,6 +201,8 @@
   </footer>
   
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/menu-text.js"></script>
 </body>
 </html>
