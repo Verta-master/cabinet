@@ -2,6 +2,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  
+  &--edit {
+    .form__input {
+      font-size: 18px;
+      line-height: 24px;
+      height: 55px;
+      margin-bottom: 5px;
+      
+      &--full {
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
 
 .form__input,
@@ -33,6 +46,10 @@
   height: 40px;
   padding-right: 15px;
   padding-left: 32px;
+  
+  &--full {
+    width: 100%;
+  }
 }
 
 .form__message {
@@ -72,6 +89,19 @@
     border: none;
     background-color: transparent;
   }
+  
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: @black;
+  }
+  
+  &--category {
+    width: 49%;
+    margin-bottom: 5px;
+    padding-left: 32px;
+    color: #828282;
+  }
 }
 
 .form__list {
@@ -88,6 +118,7 @@
   margin-bottom: 11px;
 }
 
+.form__check,
 .form__checkbox {
   display: none;
 }
@@ -137,4 +168,85 @@
 
 .form__btn-speciality {
   font-size: 18px;
+}
+
+.form__option {
+  position: relative;
+  width: 48%;
+  margin-bottom: 30px;
+}
+
+.form__comment {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.form__sign {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  fill: none;
+  stroke: @black;
+  
+  &--share svg {
+    display: block;
+    width: 15px;
+    height: 13px;
+  }
+  &--show svg {
+    display: block;
+    width: 17px;
+    height: 17px;
+  }
+}
+
+.form__check-label {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 35px;
+}
+
+.form__check:checked + .form__sign--share {
+  fill: @green;
+}
+
+.form__check:checked + .form__sign--show {
+  fill: @yellow;
+}
+
+.form__about {
+  position: relative;
+  margin: 0;
+  padding-left: 30px;
+  font-size: 14px;
+  line-height: 18px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #000;
+    border-radius: 2px;
+  }
+  
+  &--red::before {
+    background-color: @red;
+  }
+  &--green::before {
+    background-color: @green;
+  }
+  &--yellow::before {
+    background-color: @yellow;
+  }
 }
