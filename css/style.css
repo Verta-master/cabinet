@@ -1076,6 +1076,10 @@ h2,
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.btn-main--green {
+  color: #fff;
+  background-color: #007550;
+}
 .info {
   margin-bottom: 150px;
 }
@@ -2098,6 +2102,225 @@ h2,
 .home__comment p {
   margin: 0;
 }
+.modal-table {
+  margin-bottom: 90px;
+}
+.modal-table__item,
+.modal-table__line,
+.modal-table__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 30px;
+}
+.modal-table__item p,
+.modal-table__line p,
+.modal-table__header p {
+  margin: 0;
+}
+.modal-table__item p:nth-child(3),
+.modal-table__line p:nth-child(3),
+.modal-table__header p:nth-child(3) {
+  width: 165px;
+}
+.modal-table__item p:nth-child(2),
+.modal-table__line p:nth-child(2),
+.modal-table__header p:nth-child(2) {
+  width: 180px;
+}
+.modal-table__item p:first-child,
+.modal-table__line p:first-child,
+.modal-table__header p:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.modal-table__header {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.modal-table__line {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 500;
+  background-color: #FFC856;
+  cursor: pointer;
+}
+.modal-table__line p:first-child {
+  text-transform: uppercase;
+}
+.modal-table__group {
+  position: relative;
+}
+.modal-table__group:nth-child(2n) .modal-table__line {
+  color: #fff;
+  background-color: #007550;
+}
+.modal-table__group:nth-child(2n) .modal-table__btn {
+  background-image: url(../img/icons/arrow-down-white.svg);
+}
+.modal-table__btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-image: url(../img/icons/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px 12px;
+  pointer-events: none;
+}
+.modal-table__btn--open {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.modal-table__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+.modal-table__list--open {
+  display: block;
+}
+.modal-table__item {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.modal-table__item:nth-child(2n + 1) {
+  background-color: #F2F2F2;
+}
+.modal-table__item p:first-child {
+  padding-right: 100px;
+}
+.modal-table__item--finished p:first-child {
+  position: relative;
+  color: #2F80ED;
+  text-decoration: line-through;
+}
+.modal-table__item--finished p:first-child::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 70px;
+  width: 22px;
+  height: 17px;
+  background-image: url(../img/icons/icon-tick.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.course {
+  margin-top: 235px;
+  margin-bottom: 70px;
+}
+.course .title {
+  margin-top: 55px;
+  margin-bottom: 14px;
+}
+.course .title .btn {
+  width: 190px;
+  height: 25px;
+  margin-top: -3px;
+}
+.course__choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.course__block {
+  position: relative;
+  width: 475px;
+  max-width: 100%;
+  padding: 25px 37px;
+  border: 1px solid #BDBDBD;
+}
+.course__block p {
+  margin: 0;
+}
+.course__block .btn-main {
+  width: 100%;
+  margin-top: 20px;
+}
+.course__block--locked::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: -30px;
+  left: -10px;
+  width: 29px;
+  height: 40px;
+  background-image: url(../img/icons/icon-lock.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.course__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.course__wrap p {
+  width: 210px;
+}
+.course__wrap .course__price {
+  width: 125px;
+}
+.course__wrap .course__price span {
+  display: block;
+  color: #007550;
+}
+.choice__text {
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.course__progress {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1;
+  border: 1px solid #BDBDBD;
+}
+.course__bar {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  background-color: #FFC856;
+}
+.course__comment {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.course__comment b {
+  font-size: 18px;
+}
 @media (max-width: 1170px) {
   .wrapper {
     width: 100%;
@@ -2371,6 +2594,24 @@ h2,
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
   }
+  .modal-table__header {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-table__header p:nth-child(2),
+  .modal-table__item p:nth-child(2),
+  .modal-table__line p:nth-child(2),
+  .modal-table__header p:nth-child(3),
+  .modal-table__item p:nth-child(3),
+  .modal-table__line p:nth-child(3) {
+    width: 150px;
+  }
+  .modal-table__item p:first-child {
+    padding-right: 50px;
+  }
+  .modal-table__item--finished p:first-child::after {
+    right: 20px;
+  }
 }
 @media (max-width: 1022px) {
   .nav .wrapper {
@@ -2454,6 +2695,35 @@ h2,
   }
   .lesson__aside {
     margin-bottom: 45px;
+  }
+  .course {
+    margin-top: 180px;
+  }
+  .course__choice {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .choice__text {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-table__item p:nth-child(2),
+  .modal-table__item p:nth-child(3),
+  .modal-table__line p:nth-child(2),
+  .modal-table__line p:nth-child(3),
+  .modal-table__header {
+    display: none;
+  }
+  .modal-table__item--finished p:first-child::after {
+    right: 15px;
   }
 }
 @media (max-width: 766px) {
@@ -2609,6 +2879,9 @@ h2,
   .table--files .table__file a::before {
     right: 0;
     left: auto;
+  }
+  .course .title .btn {
+    display: none;
   }
 }
 @media (max-width: 480px) {
@@ -2837,5 +3110,54 @@ h2,
   }
   .btn-main {
     width: 100%;
+  }
+  .course__block {
+    padding: 20px 10px;
+  }
+  .course__wrap p {
+    width: 220px;
+  }
+  .course__wrap .course__price {
+    width: 85px;
+  }
+  .course__price {
+    padding-top: 5px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+  .course__left {
+    display: none;
+  }
+  .modal-table {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .modal-table .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .modal-table__item,
+  .modal-table__line {
+    padding-left: 20px;
+  }
+  .modal-table__item--finished p:first-child::after {
+    width: 10px;
+    height: 8px;
+    right: 20px;
+  }
+  .modal-table__line {
+    min-height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
