@@ -251,6 +251,24 @@
       transform: rotate(180deg);
     }
   }
+  .modal-table__header {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-table__header p:nth-child(2),
+  .modal-table__item p:nth-child(2),
+  .modal-table__line p:nth-child(2),
+  .modal-table__header p:nth-child(3),
+  .modal-table__item p:nth-child(3),
+  .modal-table__line p:nth-child(3) {
+    width: 150px;
+  }
+  .modal-table__item p:first-child {
+    padding-right: 50px;
+  }
+  .modal-table__item--finished p:first-child::after {
+    right: 20px;
+  }
 }
 
 //-------------------------------------------------------------
@@ -324,6 +342,30 @@
   }
   .lesson__aside {
     margin-bottom: 45px;
+  }
+  .course {
+    margin-top: 180px;
+  }
+  .course__choice {
+    flex-direction: column;
+    align-items: center;
+  }
+  .choice__text {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-table__item p:nth-child(2),
+  .modal-table__item p:nth-child(3),
+  .modal-table__line p:nth-child(2),
+  .modal-table__line p:nth-child(3),
+  .modal-table__header {
+    display: none;
+  }
+  .modal-table__item--finished p:first-child::after {
+    right: 15px;
   }
 }
 
@@ -473,6 +515,9 @@
         }
       }
     }
+  }
+  .course .title .btn {
+    display: none;
   }
 }
 
@@ -698,5 +743,51 @@
   }
   .btn-main {
     width: 100%;
+  }
+  .course__block {
+    padding: 20px 10px;
+  }
+  .course__wrap {
+    p {
+      width: 220px;
+    }
+    .course__price {
+      width: 85px;
+    }
+  }
+  .course__price {
+    padding-top: 5px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+  .course__left {
+    display: none;
+  }
+  .modal-table {
+    font-size: 14px;
+    line-height: 18px;
+    
+    .wrapper {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .modal-table__item,
+  .modal-table__line {
+    padding-left: 20px;
+  }
+  .modal-table__item--finished p:first-child::after {
+    width: 10px;
+    height: 8px;
+    right: 20px;
+  }
+  .modal-table__line {
+    min-height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
