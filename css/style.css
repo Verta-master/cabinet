@@ -1258,6 +1258,7 @@ h2,
   color: #828282;
   font-size: 14px;
   line-height: 1;
+  opacity: 1;
 }
 .form__placeholder--msg {
   -webkit-transform: none;
@@ -1317,6 +1318,12 @@ h2,
 .form__input:focus + label,
 .form__message:focus + label {
   opacity: 0;
+}
+.placeholder-active {
+  opacity: 0;
+}
+.form__input .empty + label {
+  opacity: 1;
 }
 .form__input {
   width: 100%;

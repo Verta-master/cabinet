@@ -160,6 +160,38 @@ function initTimer() {
 
 initTimer();
 
+$('.form__input').on('change', function() {
+  if ($(this).val() == '') {
+    $(this).next().removeClass("placeholder-active");
+  } else {
+    $(this).next().addClass("placeholder-active");
+  }
+});
+
+$('.form__message').on('change', function() {
+  if ($(this).val() == '') {
+    $(this).next().removeClass("placeholder-active");
+  } else {
+    $(this).next().addClass("placeholder-active");
+  }
+});
+
+$('.login__input').on('change', function() {
+  if ($(this).val() == '') {
+    $(this).next().removeClass("placeholder-active");
+  } else {
+    $(this).next().addClass("placeholder-active");
+  }
+});
+
+$('.modal__input').on('change', function() {
+  if ($(this).val() == '') {
+    $(this).next().removeClass("placeholder-active");
+  } else {
+    $(this).next().addClass("placeholder-active");
+  }
+});
+
 var breakpoint = window.matchMedia( '(min-width:481px)' );
 var mySwiper;
 var breakpointChecker = function() {
