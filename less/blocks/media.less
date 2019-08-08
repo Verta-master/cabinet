@@ -13,6 +13,9 @@
     margin-top: 0;
     height: 130px;
   }
+  main {
+    min-height: ~"calc(100vh / 0.83 - 130px)";
+  }
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
@@ -31,8 +34,7 @@
     height: 130px;
   }
   main {
-    height: auto;
-    flex-grow: 1;
+    min-height: ~"calc(100vh / 0.63 - 130px)";
   }
 }
 
