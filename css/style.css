@@ -3107,6 +3107,9 @@ h2,
     margin-top: 0;
     height: 130px;
   }
+  main {
+    min-height: calc(100vh / 0.83 - 130px);
+  }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
   html {
@@ -3124,10 +3127,7 @@ h2,
     height: 130px;
   }
   main {
-    height: auto;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    min-height: calc(100vh / 0.63 - 130px);
   }
 }
 @media (max-width: 766px) {
