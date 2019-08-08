@@ -41,6 +41,7 @@
   color: #828282;
   font-size: 14px;
   line-height: 1;
+  opacity: 1;
   
   &--msg {
     transform: none;
@@ -74,6 +75,14 @@
     opacity: 0;
   }
 }
+
+.placeholder-active {
+  opacity: 0;
+}
+
+.form__input .empty + label {
+    opacity: 1;
+  }
 
 .form__input {
   width: 100%;
