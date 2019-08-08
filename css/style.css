@@ -1229,20 +1229,49 @@ h2,
 .form__wrap--edit .form__input {
   font-size: 18px;
   height: 55px;
+}
+.form__wrap--edit .form__placeholder {
+  font-size: 18px;
+}
+.form__wrap--edit .form__input-wrap {
   margin-bottom: 5px;
 }
-.form__wrap--edit .form__input--full {
+.form__wrap--edit .form__input-wrap--full {
   margin-bottom: 15px;
+}
+.form__input-wrap {
+  width: 49%;
+  position: relative;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.form__input-wrap--full {
+  width: 100%;
+}
+.form__placeholder {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 32px;
+  color: #828282;
+  font-size: 14px;
+  line-height: 1;
+}
+.form__placeholder--msg {
+  -webkit-transform: none;
+          transform: none;
+  top: 17px;
 }
 .form__input,
 .form__message {
   display: block;
-  width: 49%;
-  margin-bottom: 15px;
   font-size: 14px;
   line-height: normal;
   border: 1px solid #BDBDBD;
   border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0);
 }
 .form__input::-webkit-input-placeholder,
 .form__message::-webkit-input-placeholder {
@@ -1283,9 +1312,14 @@ h2,
 .form__message:active:placeholder,
 .form__input:focus:placeholder,
 .form__message:focus:placeholder {
-  color: #001E20;
+  opacity: 0;
+}
+.form__input:focus + label,
+.form__message:focus + label {
+  opacity: 0;
 }
 .form__input {
+  width: 100%;
   height: 40px;
   padding-right: 15px;
   padding-left: 32px;
@@ -1294,6 +1328,7 @@ h2,
   width: 100%;
 }
 .form__message {
+  width: 100%;
   height: 135px;
   min-height: 135px;
   padding: 15px;
@@ -1722,34 +1757,28 @@ h2,
 .modal__message,
 .modal__input {
   display: block;
-  margin-bottom: 30px;
   line-height: normal;
   border: 1px solid #BDBDBD;
 }
 .modal__message::-webkit-input-placeholder,
 .modal__input::-webkit-input-placeholder {
-  opacity: 1;
-  color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
 }
 .modal__message::-moz-placeholder,
 .modal__input::-moz-placeholder {
-  opacity: 1;
-  color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
 }
 .modal__message:-ms-input-placeholder,
 .modal__input:-ms-input-placeholder {
-  opacity: 1;
-  color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
 }
 .modal__message::-ms-input-placeholder,
 .modal__input::-ms-input-placeholder {
-  opacity: 1;
-  color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
 }
 .modal__message::placeholder,
 .modal__input::placeholder {
-  opacity: 1;
-  color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
 }
 .modal__message:hover,
 .modal__input:hover,
@@ -1758,12 +1787,14 @@ h2,
   border-color: #000;
 }
 .modal__input {
-  width: 48%;
+  width: 100%;
   height: 44px;
   padding: 6px;
   padding-left: 22px;
+  background-color: rgba(255, 255, 255, 0);
 }
 .modal__input--file {
+  width: 48%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1775,11 +1806,33 @@ h2,
           align-items: center;
   color: rgba(0, 0, 0, 0.5);
 }
+.modal__input:focus + label {
+  opacity: 0;
+}
+.modal__input-wrap {
+  width: 48%;
+  position: relative;
+  z-index: 3;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.modal__placeholder {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 22px;
+  color: #828282;
+  line-height: 1;
+}
 .modal__message {
   width: 100%;
   height: 175px;
   min-height: 175px;
   padding: 20px;
+  margin-bottom: 30px;
+  margin-top: 5px;
 }
 .modal__title {
   margin: 0;
@@ -2121,10 +2174,16 @@ h2,
 .home .form__message {
   width: 100%;
   height: 190px;
-  margin-top: 30px;
-  margin-bottom: 30px;
   font-size: 18px;
   line-height: 24px;
+}
+.home .form__input-wrap {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.home .form__placeholder {
+  font-size: 18px;
+  top: 20px;
 }
 .home__comment {
   margin-bottom: 55px;
@@ -2936,36 +2995,55 @@ h2,
 .login__input {
   width: 100%;
   height: 55px;
-  margin-bottom: 20px;
   padding: 0 20px;
   text-align: center;
   line-height: normal;
   border: 1px solid #BDBDBD;
+  background-color: rgba(255, 255, 255, 0);
 }
 .login__input::-webkit-input-placeholder {
-  opacity: 1;
+  opacity: 0;
   text-align: center;
 }
 .login__input::-moz-placeholder {
-  opacity: 1;
+  opacity: 0;
   text-align: center;
 }
 .login__input:-ms-input-placeholder {
-  opacity: 1;
+  opacity: 0;
   text-align: center;
 }
 .login__input::-ms-input-placeholder {
-  opacity: 1;
+  opacity: 0;
   text-align: center;
 }
 .login__input::placeholder {
-  opacity: 1;
+  opacity: 0;
   text-align: center;
 }
 .login__input:hover,
 .login__input:active,
 .login__input:focus {
   border-color: #000;
+}
+.login__input:focus + label {
+  opacity: 0;
+}
+.login__input-wrap {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.login__placeholder {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #000;
+  line-height: 1;
 }
 .login__form {
   position: relative;
@@ -3556,9 +3634,14 @@ h2,
   .modal__wrap {
     display: block;
   }
+  .modal__input-wrap,
+  .form__input-wrap,
   .form__option,
   .modal__input {
     width: 100%;
+  }
+  .modal__input--file {
+    margin-bottom: 30px;
   }
   .portfolio .title {
     display: -webkit-box;
@@ -3772,8 +3855,15 @@ h2,
   }
   .modal__message,
   .modal__input {
-    margin-bottom: 14px;
     font-size: 14px;
+  }
+  .modal__input--file,
+  .modal__input-wrap {
+    margin-bottom: 14px;
+  }
+  .modal__placeholder {
+    font-size: 14px;
+    left: 10px;
   }
   .modal__input {
     padding-left: 10px;

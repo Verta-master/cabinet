@@ -181,13 +181,19 @@
             </div>
             <div class="info__form">
               <div class="form__wrap form__wrap--edit">
-                <input type="text" class="form__input" placeholder="Название проекта">
+                <div class="form__input-wrap">
+                  <input type="text" id="title" class="form__input">
+                  <label for="title" class="form__placeholder">Название проекта</label>
+                </div>
                 <select class="form__select form__select--category">
                   <option value="" selected="" disabled="">Категория</option>
                   <option value="1">Лендинги</option>
                   <option value="2">Контекстная реклама</option>
                 </select>
-                <input type="text" class="form__input form__input--full" placeholder="Описание проекта">
+                <div class="form__input-wrap form__input-wrap--full">
+                  <input type="text" id="project" class="form__input">
+                  <label for="project" class="form__placeholder">Описание проекта</label>
+                </div>
                 <div class="form__option">
                   <input type="checkbox" id="share" class="form__check">
                   <div class="form__sign form__sign--share">
