@@ -1482,11 +1482,15 @@ h2,
   display: block;
   width: 15px;
   height: 13px;
+  margin-top: -1px;
+  margin-left: -1px;
 }
 .form__sign--show svg {
   display: block;
   width: 17px;
   height: 17px;
+  margin-top: -1px;
+  margin-left: -1px;
 }
 .form__check-label {
   display: block;
@@ -3110,6 +3114,9 @@ h2,
   main {
     min-height: calc(100vh / 0.83 - 130px);
   }
+  .price__column--profy .price__head {
+    padding-left: 55px;
+  }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
   html {
@@ -3128,6 +3135,9 @@ h2,
   }
   main {
     min-height: calc(100vh / 0.63 - 130px);
+  }
+  .price__column--profy .price__head {
+    padding-left: 55px;
   }
 }
 @media (max-width: 766px) {
