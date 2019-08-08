@@ -58,14 +58,14 @@
 .login__input {
   width: 100%;
   height: 55px;
-  margin-bottom: 20px;
   padding: 0 20px;
   text-align: center;
   line-height: normal;
   border: 1px solid #BDBDBD;
+  background-color: rgba(255,255,255,0);
   
   &::placeholder {
-    opacity: 1;
+    opacity: 0;
     text-align: center;
   }
   
@@ -74,6 +74,26 @@
   &:focus {
     border-color: #000;
   }
+  &:focus + label {
+    opacity: 0;
+  }
+}
+
+.login__input-wrap {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.login__placeholder {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #000;
+  line-height: 1;
 }
 
 .login__form {

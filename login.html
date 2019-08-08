@@ -107,8 +107,14 @@
       <p class="login__or">или</p>
       <form action="#" class="login__form">
         <span class="login__comment">Неверная пара e-mail/пароль</span>
-        <input type="text" class="login__input" placeholder="Email">
-        <input type="text" class="login__input" placeholder="Пароль">
+        <div class="login__input-wrap">
+          <input type="email" id="email" class="login__input">
+          <label for="email" class="login__placeholder">Email</label>
+        </div>
+        <div class="login__input-wrap">
+          <input type="password" id="password" class="login__input">
+          <label for="password" class="login__placeholder">Пароль</label>
+        </div>
         <button type="submit" class="btn-main login__btn">Войти</button>
       </form>
       <div class="login__columns">
