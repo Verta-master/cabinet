@@ -3218,7 +3218,7 @@ h2,
 }
 @media screen and (max-width: 1170px) and (min-width: 1024px) {
   html {
-    zoom: 0.83;
+    zoom: 0.8;
   }
   body {
     padding-bottom: 130px;
@@ -3232,7 +3232,7 @@ h2,
     height: 130px;
   }
   main {
-    min-height: calc(100vh / 0.83 - 130px);
+    min-height: calc(100vh / 0.8 - 130px);
   }
   .price__column--profy .price__head {
     padding-left: 55px;
@@ -3240,7 +3240,7 @@ h2,
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
   html {
-    zoom: 0.63;
+    zoom: 0.6;
   }
   body {
     padding-bottom: 130px;
@@ -3254,7 +3254,7 @@ h2,
     height: 130px;
   }
   main {
-    min-height: calc(100vh / 0.63 - 130px);
+    min-height: calc(100vh / 0.6 - 130px);
   }
   .price__column--profy .price__head {
     padding-left: 55px;
