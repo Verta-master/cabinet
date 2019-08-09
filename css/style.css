@@ -1618,6 +1618,9 @@ h2,
   background-repeat: no-repeat;
   background-size: contain;
 }
+.table__price {
+  font-family: "Roboto", "Arial", sans-serif;
+}
 .review {
   margin: 0;
   padding: 0;
@@ -2612,6 +2615,7 @@ h2,
 .price__old span {
   color: #001E20;
   text-decoration: line-through;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 .price__know {
   position: relative;
@@ -2703,12 +2707,20 @@ h2,
   height: 2px;
   background-color: #001E20;
 }
+.payment__price i {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+}
 .payment__comment {
   margin-top: 0;
   margin-bottom: 12px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 300;
+}
+.payment__comment i {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
 }
 .payment__btn {
   width: 100%;
